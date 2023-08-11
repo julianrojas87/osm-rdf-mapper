@@ -28,3 +28,11 @@ osm:Relation → [
 ```
 
 which are fundamental for route planning purposes, in contrast to existing alternatives such as [Sophox](https://github.com/Sophox/sophox/tree/main/osm2rdf) or [Qlever](https://osm2rdf.cs.uni-freiburg.de/) data models.
+
+## Source data
+
+OSM dumps can be downloaded from [Geofabrik](https://download.geofabrik.de/). The road network can be extracted using a tool like [`osmium`](https://osmcode.org/osmium-tool/) as follows:
+
+```bash
+osmium tags-filter source.osm.pbf w/highway w/public_transport=platform w/railway=platform w/park_ride=yes r/type=restriction r/type=route -o filtered.osm.pbf -f pbf,add_metadata=false
+```
