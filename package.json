@@ -1,0 +1,22 @@
+{
+  "name": "osm-rdf-mapper",
+  "version": "0.0.1",
+  "description": "RDF generation script for OSM data following the https://w3id.org/openstreetmap/terms# ontology",
+  "main": "lib/index.js",
+  "type": "module",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "RDF",
+    "OSM"
+  ],
+  "author": "Julián Rojas",
+  "license": "MIT",
+  "dependencies": {
+    "@treecg/types": "^0.4.5",
+    "commander": "^11.0.0",
+    "n3": "^1.17.0",
+    "osm-pbf-parser-node": "^1.1.0"
+  }
+}
