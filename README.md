@@ -27,7 +27,7 @@ osm:Relation → [
 ]
 ```
 
-which are fundamental for route planning purposes, in contrast to existing alternatives such as [Sophox](https://github.com/Sophox/sophox/tree/main/osm2rdf) or [Qlever](https://osm2rdf.cs.uni-freiburg.de/) data models.
+which are fundamental for route planning purposes, in contrast to existing alternatives such as [Sophox](https://github.com/Sophox/sophox/tree/main/osm2rdf) or [Qlever](https://osm2rdf.cs.uni-freiburg.de/) data models. Although the [LInkedGeoData](http://linkedgeodata.org/) model defines a [mapping strategy](https://github.com/GeoKnow/LinkedGeoData/blob/6cf408341bc71d9201f551b2811e7fe3b2070a25/linkedgeodata-core/src/main/resources/org/aksw/linkedgeodata/sml/LinkedGeoData-Triplify-IndividualViews.sml#L606) based on `rdf:Seq` and the `ldgo:hasNodes` predicate, their live SPARQL endpoint [does not contain any triples](http://linkedgeodata.org/sparql?default-graph-uri=&qtxt=PREFIX%20geom%3A%20%3Chttp%3A%2F%2Fgeovocab.org%2Fgeometry%23%3E%0APREFIX%20meta%3A%20%3Chttp%3A%2F%2Flinkedgeodata.org%2Fmeta%2F%3E%0APREFIX%20lgdo%3A%20%3Chttp%3A%2F%2Flinkedgeodata.org%2Fontology%2F%3E%0ASELECT%20*%20WHERE%20%7B%0A%20%20%20%3Fs%20lgdo%3AhasNodes%20%3Fo.%0A%7D%20LIMIT%20100&format=text%2Fhtml&timeout=0) that follow such strategy.
 
 ## Source data
 
